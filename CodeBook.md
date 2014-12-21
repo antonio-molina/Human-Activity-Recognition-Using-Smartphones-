@@ -24,6 +24,8 @@ The files used for this analysis are:
 
 ## How the original data have been collected
 
+
+
 ```Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.```
 
 ```The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.```
@@ -33,27 +35,27 @@ The files used for this analysis are:
 
 The output dataset include 83 variables: 2 grouping variables [Activity and Subject] and 81 measure variables that represent the average of each variable in the original dataset for each activity and each subject.
 
-* Activity . Levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
-* Subject
-* tBodyAcc-mean()-X
-* tBodyAcc-mean()-Y
-* tBodyAcc-mean()-Z
-* tBodyAcc-std()-X
-* tBodyAcc-std()-Y
-* tBodyAcc-std()-Z
-* tGravityAcc-mean()-X
-* tGravityAcc-mean()-Y
-* tGravityAcc-mean()-Z
-* tGravityAcc-std()-X
-* tGravityAcc-std()-Y
-* tGravityAcc-std()-Z
-* tBodyAccJerk-mean()-X
-* tBodyAccJerk-mean()-Y
-* tBodyAccJerk-mean()-Z
-* tBodyAccJerk-std()-X
-* tBodyAccJerk-std()-Y
-* tBodyAccJerk-std()-Z
-* tBodyGyro-mean()-X
+* Activity : Activity performed by the subject on the experiment. Six different values or levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
+* Subject : Volunteer that performed the experiment. Each different value represent one of the 30 volunteers that have participated in the experiment.
+* tBodyAcc-mean()-X : Average Body Acceleration on the X axis for the specified activity and subject.
+* tBodyAcc-mean()-Y : Average Body Acceleration on the Y axis for the specified activity and subject. 
+* tBodyAcc-mean()-Z : Average Body Acceleration on the Z axis for the specified activity and subject.
+* tBodyAcc-std()-X : Average standard deviation for the Body Acceleration on the X axis for the specified activity and subject.
+* tBodyAcc-std()-Y : Average standard deviation for the Body Acceleration on the Y axis for the specified activity and subject.
+* tBodyAcc-std()-Z : Average standard deviation for the Body Acceleration on the Z axis for the specified activity and subject.
+* tGravityAcc-mean()-X : Average Gravity Acceleration on the X axis for the specified activity and subject.
+* tGravityAcc-mean()-Y : Average Gravity Acceleration on the Y axis for the specified activity and subject.
+* tGravityAcc-mean()-Z : Average Gravity Acceleration on the Z axis for the specified activity and subject.
+* tGravityAcc-std()-X : Average standard deviation for the Gravity Acceleration on the X axis for the specified activity and subject.
+* tGravityAcc-std()-Y : Average standard deviation for the Gravity Acceleration on the Y axis for the specified activity and subject.
+* tGravityAcc-std()-Z : Average standard deviation for the Gravity Acceleration on the Z axis for the specified activity and subject.
+* tBodyAccJerk-mean()-X : Average  rate of change of acceleration; that is, the derivative of acceleration with respect to time on the X axis for the specified activity and subject. 
+* tBodyAccJerk-mean()-Y : Average  rate of change of acceleration; that is, the derivative of acceleration with respect to time on the Y axis for the specified activity and subject.
+* tBodyAccJerk-mean()-Z : Average  rate of change of acceleration; that is, the derivative of acceleration with respect to time on the Z axis for the specified activity and subject.
+* tBodyAccJerk-std()-X : Average standard deviation of the rate of change of acceleration; that is, the derivative of acceleration with respect to time on the X axis for the specified activity and subject. 
+* tBodyAccJerk-std()-Y : Average standard deviation of the rate of change of acceleration; that is, the derivative of acceleration with respect to time on the Y axis for the specified activity and subject. 
+* tBodyAccJerk-std()-Z : Average standard deviation of the rate of change of acceleration; that is, the derivative of acceleration with respect to time on the Z axis for the specified activity and subject. 
+* tBodyGyro-mean()-X 
 * tBodyGyro-mean()-Y
 * tBodyGyro-mean()-Z
 * tBodyGyro-std()-X
